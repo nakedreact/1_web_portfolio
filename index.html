@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sebastian's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a target="_blank" href="https://github.com/nakedreact"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" ="https://www.linkedin.com/in/sebastiancvaldez"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Hola! I'm Sebastian...</h1>
+          <p>Software Developer and Mechatronics Engineer</p>
+        </div>
+        <h5 class="intro-header">
+          A mechatronics engineer that really enjoys coding and robots. Based in
+          Monterrey. I love trading card games, pokemon and building fun and
+          useful internet apps!
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto: sebastiancv4000@gmail.com"> Contact me</a
+          ><a target="_blank" href="https://github.com/nakedreact"> Github</a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/sebastiancvaldez"
+          >
+            LinkedIn</a
+          >
+        </div>
+        <div id="play-game">
+          <button onclick="playGame()">Play Game?</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4 style="display: none">Pick a color</h4>
+          <p style="display: none">Great... you ruined my portfolio >:(</p>
+          <input
+            type="color"
+            onchange="changeColor()"
+            id="color-picker"
+            value="#0084ff"
+          />
+          <button onclick="resetColor()" style="display: none">Reset</button>
+        </div>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Javascript</td>
+              <td>
+                ReactJS | NodeJS & ExpressJS | NestJS | Typescript | NextJS
+              </td>
+            </tr>
+            <tr>
+              <td>Power Apps</td>
+              <td>Power BI</td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>
+                TailwindCSS | GIT | PostgreSQL | Docker | Prisma | MongoDB |
+                Firebase
+              </td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Microsoft Paint</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>January, 2025</p>
+              <h4>Wordle Game</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>MongoDB</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ExpressJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NodeJS</p>
+                </div>
+              </div>
+              <p>
+                This Wordle game was the first side project I built which
+                ignited my passion for coding
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://wordle-frontend-delta.vercel.app/"
+                  target="_blank"
+                  >Wordle Game</a
+                >
+                <a
+                  href="https://github.com/nakedreact/wordle-frontend"
+                  target="_blank"
+                  >Frontend</a
+                >
+                <a
+                  href="https://github.com/nakedreact/wordle-backend"
+                  target="_blank"
+                  >Backend</a
+                >
+              </div>
+            </div>
+            <div class="image-div">
+              <img
+                class="big-img"
+                alt="wordle-game"
+                src="/1_web_portfolio/public/wordle.png"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>June, 2025</p>
+              <h4>Expense Tracker</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Firebase</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+              </div>
+              <p>
+                Subscription tracker to keep track of all of your monthly
+                expenses and subscriptions
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://master.d2j2ok8ecrr8rg.amplifyapp.com/"
+                  target="_blank"
+                  >Expenser</a
+                >
+                <a
+                  href="https://github.com/nakedreact/4_subtracker"
+                  target="_blank"
+                  >Codebase</a
+                >
+              </div>
+            </div>
+            <div class="image-div">
+              <img
+                class="big-img"
+                alt="wordle-game"
+                src="/1_web_portfolio/public/expenser.png"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>June, 2025</p>
+              <h4>TechStore</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Stripe</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Fullstack</p>
+                </div>
+              </div>
+              <p>
+                Tech Store to buy stickers, planners and much more using Stripe
+                and NextJS for fullstack development
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://master.drcw7jldh33ki.amplifyapp.com/"
+                  target="_blank"
+                  >Techstore</a
+                >
+                <a
+                  href="https://github.com/nakedreact/3_pokestore"
+                  target="_blank"
+                  >Codebase</a
+                >
+              </div>
+            </div>
+            <div class="image-div">
+              <img
+                class="big-img"
+                alt="wordle-game"
+                src="/1_web_portfolio/public/techstore.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By
+        <a href="https://github.com/nakedreact" target="_blank"
+          >Sebastian Cardenas </a
+        ><br />Star repo pls :D
+      </p>
+    </footer>
+    <script>
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+
+      function playGame() {
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
+      }
+
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        hiddenText.style.display = "none";
+        playBtn.style.display = "block";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
